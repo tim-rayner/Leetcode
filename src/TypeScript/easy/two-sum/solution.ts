@@ -12,4 +12,4 @@ export function twoSum(nums: number[], target: number): number[] {
   return [];
 }
 
-twoSum(nums, target); // [0, 2=]
+twoSum(nums, target); // [0, 2]
