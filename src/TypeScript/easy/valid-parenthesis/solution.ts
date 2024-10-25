@@ -1,6 +1,6 @@
 const input = "(test)";
 
-export function isValidParenthesis(input: string): boolean {
+export function isValid(input: string): boolean {
   //split string into array
   const inputArr = input.split("");
 
@@ -70,4 +70,4 @@ function checkMatching(openingChar: string, currentChar: string): boolean {
   }
 }
 
-console.log(isValidParenthesis(input));
+console.log(isValid(input));
