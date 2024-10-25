@@ -9,7 +9,6 @@ export function isValidParenthesis(input: string): boolean {
 
   //loop through inputArr
   for (let i = 0; i < inputArr.length; i++) {
-    console.log(inputArr[i]);
     const currentChar = inputArr[i];
     //if the character is an opening bracket, push it onto the stack
     if (isOpening(currentChar)) {
