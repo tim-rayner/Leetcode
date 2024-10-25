@@ -32,29 +32,11 @@ export function isValid(input: string): boolean {
 }
 
 function isOpening(inputChar: string): boolean {
-  switch (inputChar) {
-    case "(":
-      return true;
-    case "{":
-      return true;
-    case "[":
-      return true;
-    default:
-      return false;
-  }
+  return inputChar === "(" || inputChar === "{" || inputChar === "[";
 }
 
 function isClosing(inputChar: string): boolean {
-  switch (inputChar) {
-    case ")":
-      return true;
-    case "}":
-      return true;
-    case "]":
-      return true;
-    default:
-      return false;
-  }
+  return inputChar === ")" || inputChar === "}" || inputChar === "]";
 }
 
 function checkMatching(openingChar: string, currentChar: string): boolean {
